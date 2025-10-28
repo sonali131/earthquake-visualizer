@@ -69,7 +69,7 @@ earthquake-visualizer/
 
 ## 1️⃣ Clone the repository
 
-git clone https://github.com/your-username/earthquake-visualizer.git
+git clone https://github.com/sonali131/earthquake-visualizer.git
 cd earthquake-visualizer
 cd earthquake-visualizer
 
@@ -89,7 +89,6 @@ npm run dev
 
 ## 🖼️ Screenshots
 
-![alt text](<Screenshot 2025-10-28 200433.png>)
 Screenshots are stored in the assets/ folder or can be uploaded to your GitHub repository.
 
 ## 🌐 Deployment
