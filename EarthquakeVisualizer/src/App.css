@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #282c34;
+  color: #f0f0f0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  overflow: scroll;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  padding: 0;
+}
+
+.App-header {
+  background-color: #20232a;
+  padding: 15px 20px;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  position: relative;
+}
+
+.App-header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+.App-main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0;
+  position: relative;
+}
+
+.map-container {
+  height: calc(100vh - 70px);
+  width: 100vw;
+  max-width: none;
+  border-radius: 0;
+  box-shadow: none;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+
+/* Custom Div Icon for Markers */
+.custom-div-icon {
+  background-color: transparent !important;
+  border: none !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.no-data-message {
+  font-size: 1.2em;
+  color: #ccc;
+  position: absolute;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.App-footer {
+  background-color: #20232a;
+  padding: 10px;
+  color: #aaa;
+  font-size: 0.8em;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  position: relative; /* z-index */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .App-header h1 {
+    font-size: 1.5em;
+  }
+  .map-container {
+    height: calc(100vh - 60px);
+  }
+}
